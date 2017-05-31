@@ -1,0 +1,240 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background: url(../img/bg.png);
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    position: relative;
+    font-weight: bold;
+}
+
+.content {
+    position: relative;
+    /*border:1px solid black;*/
+    width: 90%;
+    height: 60%;
+    margin: 50px auto 0;
+}
+
+/*a:hover {*/
+    /*color: yellow;*/
+/*}*/
+
+/*首页*/
+.cover {
+    background: #4b85a0 url(../img/bg.png);
+}
+
+.cover h1, .cover h3 {
+    animation: fadeInDown 500ms linear 400ms both
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-30%);
+        opacity: 0
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.cover h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.down {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    top: 150px;
+    position: relative;
+    text-align: center;
+}
+
+.down i {
+    font-size: 3em;
+    color: white;
+    position: relative;
+    top: 30px;
+    transform: translateY(-50%);
+}
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: -100;
+}
+/*自我介绍部分*/
+.intro {
+    background: #109085 url(../img/bg.png);
+    text-align: center;
+}
+
+.popup {
+    width: 350px;
+    height: 590px;
+    left: -350px;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    position: fixed;
+    transition: all .5s ease;
+    border-radius: 0 6px 6px 0;
+    z-index: 100;
+    /*border: 1px solid black;*/
+}
+
+.popup_tag {
+    width: 40px;
+    height: 60px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    border-left: 1px solid black;
+    left: 350px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 6px 6px 0;
+    z-index: 10;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.detail {
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.detail li {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.detail hr {
+    width: 250px;
+}
+
+.personal a {
+    color: white;
+    font-size: 1.2em;
+}
+
+/*项目经验*/
+.project {
+    background: #87b0a5 url(../img/bg.png);
+}
+
+.project p {
+    font-size: 1.2em;
+}
+
+.plist {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /*border:1px solid black;*/
+    clear: both;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+}
+
+.plist li {
+    display: inline-block;
+    /*border: 1px solid black;*/
+    margin: 30px 30px;
+    text-align: center;
+    /*width:200px;*/
+    /*background:#138efa;*/
+}
+.plist img{
+    width:270px;
+    height:265px;
+}
+.mask {
+    z-index: 1;
+    position: absolute;
+    /*top:100px;*/
+    /*left:100px;*/
+    width: 270px;
+    height: 265px;
+    background: #000;
+    opacity: .5;
+
+}
+
+.plist p{
+    position: absolute;
+    z-index: 2;
+    top: 140px;
+    font-size: 1.5em;
+}
+
+.bit{
+    left: 82px;
+}
+.cart{
+    left: 450px;
+}
+.game{
+    left:790px;
+}
+/*技能页*/
+.skill {
+    background: #4d5e8f url(../img/bg.png);
+}
+
+#s {
+    left: -600px;
+    position: relative;
+}
+
+.illustrate {
+    text-align: left;
+    /*border:1px solid black;*/
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+}
+
+.illustrate li {
+    margin-bottom: 50px;
+}
+
+/*联系我*/
+.connection {
+    background: #a29971 url(../img/bg.png);
+}
+
+.clist {
+    margin-top: 100px;
+    color: white;
+    font-size: 2em;
+    list-style-type: none;
+}
+
+.clist a {
+    color: white;
+}
